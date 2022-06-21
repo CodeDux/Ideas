@@ -1,0 +1,32 @@
+<Project>
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <NoWarn>$(NoWarn);CS1591;NU5105</NoWarn>
+        <VersionPrefix>0.0.1</VersionPrefix>
+        <!-- <EnablePreviewFeatures>true</EnablePreviewFeatures> -->
+        <DebugType>embedded</DebugType>
+
+        <!-- Nuget 
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <Authors></Authors>
+        <PackageProjectUrl></PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReleaseNotes>$(ReleaseUrl)</PackageReleaseNotes>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>icon.png</PackageIcon> -->
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    </PropertyGroup>
+    
+    <!-- Nuget
+    <ItemGroup Condition="'$(GeneratePackageOnBuild)' == 'true'">
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+        <None Include="../README.md" Pack="true" PackagePath="/" Visible="false" />
+    </ItemGroup> -->
+</Project>

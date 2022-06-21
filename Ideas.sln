@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{529F781E-E300-4041-B27F-4A4F9331C7EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F725FCD2-AC05-4420-882C-B8332EA5E509}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{07E6DEBB-7947-40E2-A9E9-58C77E1B7A29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{8CB17304-8F2A-4D2C-AB64-E616D21F02DF}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Nuget.Config = Nuget.Config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ideas.Trie", "src\Ideas.Trie\Ideas.Trie.csproj", "{F03D4228-E2C7-41C5-99C2-E55DC38BBC6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F03D4228-E2C7-41C5-99C2-E55DC38BBC6B} = {529F781E-E300-4041-B27F-4A4F9331C7EE}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F03D4228-E2C7-41C5-99C2-E55DC38BBC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03D4228-E2C7-41C5-99C2-E55DC38BBC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03D4228-E2C7-41C5-99C2-E55DC38BBC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03D4228-E2C7-41C5-99C2-E55DC38BBC6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
